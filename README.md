@@ -11,3 +11,13 @@ It's required python installation.
 sudo apt-get update
 sudo apt-get install python3.6
 ```
+## Exercise
+
+```bash
+count-down.py
+```
+
+
+```bash
+pomodoro-console.py
+```
