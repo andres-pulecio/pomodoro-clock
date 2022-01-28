@@ -13,10 +13,14 @@ sudo apt-get install python3.6
 ```
 ## Exercise
 
-- count-down.py
-
-![count-down](https://user-images.githubusercontent.com/53886913/150052896-34908848-797f-4a96-911c-11ae00f8fbfd.gif)
+- pomodoro-window.py
+![pomodoro](https://user-images.githubusercontent.com/53886913/151476326-5bac7465-d983-4c8d-8eb3-6bdf7caa1f28.gif)
 
 - pomodoro-console.py
  
 ![Screen Recording 2022-01-18 at 9 37 38 PM](https://user-images.githubusercontent.com/53886913/150053308-b4f1e08d-2703-4816-af4c-0fba571c907a.gif)
+
+- count-down.py
+
+![count-down](https://user-images.githubusercontent.com/53886913/150052896-34908848-797f-4a96-911c-11ae00f8fbfd.gif)
+
