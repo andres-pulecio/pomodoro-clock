@@ -1,5 +1,6 @@
 from cgitb import text
 from curses import window
+from time import sleep
 from tkinter import ttk, Tk, Canvas, PhotoImage
 from tkinter import *
 
@@ -7,9 +8,8 @@ from tkinter import *
 x = 5
 yellow = "#f7f5dd"
 reps = 0
-work_time = 3
-rest_time = 5
-timer = NONE
+work_time = 25 * 60
+rest_time = 5 * 60
 
 # trasform the value in the timer 
 def count_down(count):
@@ -17,22 +17,27 @@ def count_down(count):
     seconds = count % 60 
     timer_format = '{:02d}:{:02d}'.format(minutes,seconds)
     canvas.itemconfig(timer_text, text=f"{timer_format}")
-   
-    if count > 0:
+
+    if count > -1:
         global timer
         timer = window.after(1000, count_down, count -1)
     else:
-        count = 0
+        start_timer()
         
 def restart_timer():
+    window.after_cancel(timer)
+    canvas.itemconfig(timer_text, text=f"00:00")
     global reps
     reps = 0
-    count_down(0)
     
 def start_timer():
     global reps
     reps += 1
-    count_down(work_time)
+
+    if reps % 2 == 0:
+        count_down(rest_time)
+    else:
+        count_down(work_time)
 
 #Create the interface Window 
 window = Tk()
