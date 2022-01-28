@@ -14,7 +14,8 @@ sudo apt-get install python3.6
 ## Exercise
 
 - pomodoro-window.py
-![pomodoro](https://user-images.githubusercontent.com/53886913/151476326-5bac7465-d983-4c8d-8eb3-6bdf7caa1f28.gif)
+
+![pomodoro](https://user-images.githubusercontent.com/53886913/151476569-7cbeb04b-660c-41a3-a2d8-ee6d81b26376.gif)
 
 - pomodoro-console.py
  
